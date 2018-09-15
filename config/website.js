@@ -3,17 +3,17 @@ const tailwind = require('../tailwind');
 module.exports = {
   pathPrefix: '/', // Prefix for all links. If you deploy your site to example.com/portfolio your pathPrefix should be "/portfolio"
 
-  siteTitle: 'Cara - Gatsby Starter Portfolio', // Navigation and Site Title
-  siteTitleAlt: 'Cara', // Alternative Site title for SEO
+  siteTitle: 'باشگاه کدنویسی جادوگران آینده', // Navigation and Site Title
+  siteTitleAlt: 'کدنویسی', // Alternative Site title for SEO
   siteUrl: 'https://portfolio-cara.netlify.com', // Domain of your site. No trailing slash!
-  siteLanguage: 'en', // Language Tag on <html> element
+  siteLanguage: 'fa', // Language Tag on <html> element
   siteLogo: '/logos/logo-1024.png', // Used for SEO and manifest
-  siteDescription: 'Playful & Colorful One-Page website with Parallax effect',
+  siteDescription: 'معرفی و ثبت نام در دوره های آموزشی کدنویسی برای نوجوانان',
 
   siteFBAppID: '123456789', // Facebook App ID
   userTwitter: '@cara', // Twitter Username
-  ogSiteName: 'cara', // Facebook Site Name
-  ogLanguage: 'de_DE', // Facebook Language
+  ogSiteName: 'جادوگران آینده', // Facebook Site Name
+  ogLanguage: 'fa', // Facebook Language
 
   // Manifest and Progress color
   themeColor: tailwind.colors.orange,
