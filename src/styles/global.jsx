@@ -6,8 +6,8 @@ injectGlobal`
     box-sizing: inherit;
   }
   html {
-    font-family: 'IRANSans';
-    direction: 'rtl';
+    font-family: 'IRANSans' !important;
+    direction: rtl;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
     box-sizing: border-box;
