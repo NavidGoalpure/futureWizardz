@@ -44,6 +44,7 @@ const Inner = styled.div`
 const BigTitle = styled.h1`
   ${tw('text-5xl lg:text-6xl font-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
+  text-align: center;
 `;
 
 const Title = styled.h1`
@@ -63,7 +64,7 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.p`
-  ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
+  ${tw('text-2xl lg:text-4xl  text-white mt-8 xxl:w-3/4')};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 `;
 
@@ -107,7 +108,7 @@ const AboutSub = styled.span`
 `;
 
 const AboutDesc = styled.p`
-  ${tw('text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify')};
+  ${tw('text-grey-light text-lg md:text-xl lg:text-2xl  pt-6 md:pt-12 text-justify')};
 `;
 
 const ContactText = styled.p`
@@ -119,7 +120,7 @@ const ContactText = styled.p`
 `;
 
 const Footer = styled.footer`
-  ${tw('text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg')};
+  ${tw('text-center text-grey absolute pin-b p-6  text-md lg:text-lg')};
   a {
     color: #e07628;
     text-decoration: none;
@@ -159,45 +160,45 @@ const Index = () => (
       </Divider>
       <Content speed={0.4} offset={0}>
         <Hero>
-          <BigTitle style={{ 'font-Family': 'IRANSans' }}>
-            باشگاه برنامه نویسی <br />
+          <BigTitle>
+            باشگاه کدنویسی <br />
             جادوگران آینده
           </BigTitle>
-          <Subtitle>آینده رو کامپیوترها می سازن،‌ با یاد گرفتن کدنویسی میتونین تو این آینده سهیم بشین.</Subtitle>
+          <Subtitle>برگزار کننده خلاقانه ترین دوره آموزش کدنویسی به نوجوانان</Subtitle>
         </Hero>
       </Content>
       <DividerMiddle bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)" speed={-0.2} offset={1.1} />
       <Content speed={0.4} offset={1}>
         <Inner>
-          <Title>Projects</Title>
+          <Title> دقت کن:</Title>
           <ProjectsWrapper>
             <ProjectCard
-              title="Freiheit"
+              title="جوزف وایزنبام"
               link="https://www.behance.net/gallery/58937147/Freiheit"
-              bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
+              bg="linear-gradient(to left, #D4145A 0%, #FBB03B 100%)"
             >
-              This project is my entry to Adobe's #ChallengeYourPerspective contest.
+              کدنویس خالق جهان خودشه. جهان مجازی پیچیده ای که در قالب برنامه های کامپیوتری ساخته میشه.
             </ProjectCard>
             <ProjectCard
-              title="Harry Potter"
+              title="استیو جابز"
               link="https://www.behance.net/gallery/52915793/Harry-Potter"
-              bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
+              bg="linear-gradient(to left, #662D8C 0%, #ED1E79 100%)"
             >
-              I entered the DOCMA 2017 award with this Harry Potter inspired image.
+              هرکسی باید کدنویسی رو یاد بگیره. چون کدنویسی شیوه فکر کردن رو آموزش میده.
             </ProjectCard>
             <ProjectCard
-              title="Tomb Raider"
+              title="کریس بوش"
               link="https://www.behance.net/gallery/43907099/Tomb-Raider"
-              bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
+              bg="linear-gradient(to left, #009245 0%, #FCEE21 100%)"
             >
-              Recreation of a Tomb Raider Wallpaper (Fan Art)
+              وقتی صحبت از آینده است،‌خیلی مهمه قابلیت آموزش زبان های برنامه نویسی رو داشته باشیم.
             </ProjectCard>
             <ProjectCard
-              title="Eagle"
+              title="الن اولمن"
               link="https://www.behance.net/gallery/38068151/Eagle"
-              bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+              bg="linear-gradient(to left, #D585FF 0%, #00FFEE 100%)"
             >
-              A fantasy image manipulation relocating the habitat of wild animals.
+              کدنویسی هنر طراحی الگوریتم ها و رام کردن کدهای سرگردانه!
             </ProjectCard>
           </ProjectsWrapper>
         </Inner>
@@ -245,25 +246,27 @@ const Index = () => (
         <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
       </Divider>
       <Content speed={0.4} offset={2}>
-        <Inner>
-          <Title>About</Title>
-          <AboutHero>
-            <Avatar src={avatar} alt="John Doe" />
-            <AboutSub>
-              The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
-              Emoji into my speech to better express myself. Winky face.
-            </AboutSub>
-          </AboutHero>
-          <AboutDesc>
-            You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-            every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-            make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
-            kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is that
-            all right?
-          </AboutDesc>
-        </Inner>
+        <div style={{ height: '-webkit-fill-available' }}>
+          <Inner>
+            <Title>About</Title>
+            <AboutHero>
+              <Avatar src={avatar} alt="John Doe" />
+              <AboutSub>
+                The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
+                Emoji into my speech to better express myself. Winky face.
+              </AboutSub>
+            </AboutHero>
+            <AboutDesc>
+              You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
+              every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
+              make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
+              kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is
+              that all right?
+            </AboutDesc>
+          </Inner>
+        </div>
       </Content>
-      <Divider fill="#23262b" speed={0.2} offset={3}>
+      <Divider fill="#23262b" speed={0.2} offset={4}>
         <WaveWrapper>
           <InnerWave>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 338.05" preserveAspectRatio="none">
