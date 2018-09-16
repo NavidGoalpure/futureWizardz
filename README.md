@@ -102,7 +102,7 @@ module.exports = {
 };
 ```
 
-2) Use the `tailwind.js` file to configure TailwindCSS. Their [documentation](https://tailwindcss.com/docs/configuration) explains it step-by-setp.
+2) Use the `tailwind.js` file to configure TailwindCSS. Their [documentation](https://tailwindcss.ctailwind.jsom/docs/configuration) explains it step-by-setp.
 
 3) Modify the files in the `src/styles` directory.
 

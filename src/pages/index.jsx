@@ -37,7 +37,8 @@ const Hero = styled.div`
 `;
 
 const Inner = styled.div`
-  ${tw('w-full xxl:w-2/3 text-center lg:text-left')};
+  ${tw('w-full xxl:w-2/3 text-center lg:text-right')};
+  text-align: 'right';
 `;
 
 const BigTitle = styled.h1`
@@ -158,7 +159,7 @@ const Index = () => (
       </Divider>
       <Content speed={0.4} offset={0}>
         <Hero>
-          <BigTitle>
+          <BigTitle style={{ 'font-Family': 'IRANSans' }}>
             باشگاه برنامه نویسی <br />
             جادوگران آینده
           </BigTitle>
