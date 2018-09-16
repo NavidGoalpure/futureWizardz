@@ -248,20 +248,22 @@ const Index = () => (
       <Content speed={0.4} offset={2}>
         <div style={{ height: '-webkit-fill-available' }}>
           <Inner>
-            <Title>About</Title>
+            <Title>مدرس</Title>
             <AboutHero>
               <Avatar src={avatar} alt="John Doe" />
               <AboutSub>
-                The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
-                Emoji into my speech to better express myself. Winky face.
+                نوید گل پور مدرس این دوره برنامه نویس حوزه های مختلف کامپیوتری از جمله Front-End. Back-End, Mobile,
+                BlockChain است و از طرفی تجربه زیادی در کار کردن با نوجوانان دارد. برگزاری دوره های مختلف پرورش خلاقیت،
+                فلسفه برای کودکان در کنار دانش برنامه نویسی او را فرد کاملا مناسبی برای برگزاری این دوره آموزشی نموده
+                است
               </AboutSub>
             </AboutHero>
             <AboutDesc>
-              You know the way you feel when you see a picture of two otters holding hands? That's how you're gonna feel
-              every day. My mother cried the day I was born because she knew she’d never be prettier than me. You should
-              make me your campaign manager. I was born for politics. I have great hair and I love lying. Captain? The
-              kids want to know where Paulie the Pigeon is. I told them he got sucked up into an airplane engine, is
-              that all right?
+              دوره آموزشی «جادوگران آینده» بر اساس جدیدترین متدهای آموزشی تدوین شده است. تمرکز این دوره بر توانمند نمودن
+              نوجوانان برای «خودآموزی» و «کار تیمی» است که مهمترین مهارت های لازم برای کدنویسان ممتاز است. در طی این
+              دوره پرورش عنصر تخیل کودکان مورد توجه بسیاری است. چرا که از طرفی برنامه نویسی کاری است، بسیار «خلاقانه» و
+              از طرف دیگر فانتزی و تخیل نقش پررنگی در علاقه مند نمودن کودکان و نوجوانان به آموزش و یادگیری دارد تحقیقات
+              روانشناسان نشان داده است که یادگیری کودکان در فضای فانتزی بسیار بیشتر از فضای واقعی اتفاق می افتد.
             </AboutDesc>
           </Inner>
         </div>
@@ -284,7 +286,7 @@ const Index = () => (
       </Divider>
       <Content speed={0.4} offset={3}>
         <Inner>
-          <Title>Get in touch</Title>
+          <Title>راه های تماس</Title>
           <ContactText>
             Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
             <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
