@@ -65,6 +65,7 @@ const Title = styled.h1`
 const Subtitle = styled.p`
   ${tw('text-2xl lg:text-4xl  text-white mt-8 xxl:w-3/4')};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
 `;
 
 const ProjectsWrapper = styled.div`
@@ -164,7 +165,11 @@ const Index = () => (
             باشگاه کدنویسی <br />
             جادوگران آینده
           </BigTitle>
-          <Subtitle>برگزار کننده خلاقانه ترین دوره آموزش کدنویسی به نوجوانان</Subtitle>
+          <Subtitle>
+            برگزار کننده خلاقانه ترین دوره آموزش کدنویسی
+            <br />
+            برای نوجوانان
+          </Subtitle>
         </Hero>
       </Content>
       <DividerMiddle bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)" speed={-0.2} offset={1.1} />
