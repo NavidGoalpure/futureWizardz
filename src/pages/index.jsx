@@ -38,7 +38,6 @@ const Hero = styled.div`
 
 const Inner = styled.div`
   ${tw('w-full xxl:w-2/3 text-center lg:text-right')};
-  text-align: 'right';
 `;
 
 const BigTitle = styled.h1`
@@ -101,6 +100,7 @@ const AboutHero = styled.div`
 
 const Avatar = styled.img`
   ${tw('rounded-full w-32 xl:w-48 shadow-lg h-full')};
+  margin-left: 3rem;
 `;
 
 const AboutSub = styled.span`
@@ -268,7 +268,7 @@ const Index = () => (
           </Inner>
         </div>
       </Content>
-      <Divider fill="#23262b" speed={0.2} offset={4}>
+      <Divider fill="#23262b" speed={0.2} offset={2}>
         <WaveWrapper>
           <InnerWave>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 338.05" preserveAspectRatio="none">
@@ -288,9 +288,11 @@ const Index = () => (
         <Inner>
           <Title>راه های تماس</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+            برای ثبت نام <a href="https://goo.gl/forms/k95q09lqhRg7qf0Z2">اینجا</a>
+            کلیک کنید.
+            <br />
+            برای کسب اطلاعات بیشتر از طریق <a href="https://t.me/codeclubgorgan"> آیدی </a> یا{' '}
+            <a href="https://t.me/GrateStallman">کانال</a> تلگرام با ما در تماس باشید.
           </ContactText>
         </Inner>
         <Footer>
