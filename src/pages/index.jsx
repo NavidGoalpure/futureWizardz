@@ -180,7 +180,7 @@ const Index = () => (
             <ProjectCard
               title="جوزف وایزنبام"
               link="https://www.behance.net/gallery/58937147/Freiheit"
-              bg="linear-gradient(to left, #D4145A 0%, #FBB03B 100%)"
+              bg="linear-gradient(to left, #2f365f 0%, #2779bd 100%)"
             >
               کدنویس خالق جهان خودشه. جهان مجازی پیچیده ای که در قالب برنامه های کامپیوتری ساخته میشه.
             </ProjectCard>
@@ -194,14 +194,14 @@ const Index = () => (
             <ProjectCard
               title="کریس بوش"
               link="https://www.behance.net/gallery/43907099/Tomb-Raider"
-              bg="linear-gradient(to left, #009245 0%, #FCEE21 100%)"
+              bg="linear-gradient(to left, #0b4228 0%,  #009245 100%)"
             >
               وقتی صحبت از آینده است،‌خیلی مهمه قابلیت آموزش زبان های برنامه نویسی رو داشته باشیم.
             </ProjectCard>
             <ProjectCard
               title="الن اولمن"
               link="https://www.behance.net/gallery/38068151/Eagle"
-              bg="linear-gradient(to left, #D585FF 0%, #00FFEE 100%)"
+              bg="linear-gradient(to left, #D4145A 0%, #ef5753 100%)"
             >
               کدنویسی هنر طراحی الگوریتم ها و رام کردن کدهای سرگردانه!
             </ProjectCard>
