@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const HTML = props => (
+const HTML = props => (
   <html {...props.htmlAttributes}>
     <head>
       <meta charSet="utf-8" />
@@ -17,7 +17,7 @@ export const HTML = props => (
     </body>
   </html>
 );
-
+export default HTML;
 HTML.propTypes = {
   htmlAttributes: PropTypes.object,
   headComponents: PropTypes.array,
