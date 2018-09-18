@@ -43,7 +43,6 @@ const Inner = styled.div`
 const BigTitle = styled.h1`
   ${tw('text-5xl lg:text-6xl font-serif text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
-  text-align: center;
 `;
 
 const Title = styled.h1`
@@ -63,9 +62,8 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.p`
-  ${tw('text-2xl lg:text-4xl  text-white mt-8 xxl:w-3/4')};
+  ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-  text-align: center;
 `;
 
 const ProjectsWrapper = styled.div`
@@ -109,7 +107,7 @@ const AboutSub = styled.span`
 `;
 
 const AboutDesc = styled.p`
-  ${tw('text-grey-light text-lg md:text-xl lg:text-2xl  pt-6 md:pt-12 text-justify')};
+  ${tw('text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify')};
 `;
 
 const ContactText = styled.p`
@@ -121,7 +119,7 @@ const ContactText = styled.p`
 `;
 
 const Footer = styled.footer`
-  ${tw('text-center text-grey absolute pin-b p-6  text-md lg:text-lg')};
+  ${tw('text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg')};
   a {
     color: #e07628;
     text-decoration: none;
@@ -131,7 +129,7 @@ const Footer = styled.footer`
 const Index = () => (
   <React.Fragment>
     <SEO />
-    <Parallax pages={4}>
+    <Parallax pages={5}>
       <Divider speed={0.2} offset={0}>
         <UpDown>
           <SVG icon="triangle" className={hidden} width={48} stroke={colors.orange} left="10%" top="20%" />
@@ -162,18 +160,27 @@ const Index = () => (
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            باشگاه کدنویسی <br />
-            جادوگران آینده
+            <p style={{ textAlign: 'center' }}>
+              باشگاه کدنویسی <br />
+              جادوگران آینده
+            </p>
           </BigTitle>
           <Subtitle>
-            برگزار کننده خلاقانه ترین دوره آموزش کدنویسی
-            <br />
-            برای نوجوانان
+            <p style={{ textAlign: 'center' }}>
+              برگزار کننده خلاقانه ترین دوره آموزش کدنویسی
+              <br />
+              برای نوجوانان
+            </p>
           </Subtitle>
         </Hero>
       </Content>
-      <DividerMiddle bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)" speed={-0.2} offset={1.1} />
-      <Content speed={0.4} offset={1}>
+      <DividerMiddle
+        bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
+        speed={-0.2}
+        offset={1.1}
+        factor={2}
+      />
+      <Content speed={0.4} offset={1.2} factor={2}>
         <Inner>
           <Title> دقت کن:</Title>
           <ProjectsWrapper>
@@ -208,7 +215,7 @@ const Index = () => (
           </ProjectsWrapper>
         </Inner>
       </Content>
-      <Divider speed={0.1} offset={1}>
+      <Divider speed={0.1} offset={1} factor={2}>
         <UpDown>
           <SVG icon="box" width={6} fill={colors.white} left="85%" top="75%" />
           <SVG icon="upDown" width={8} fill={colors.teal} left="70%" top="20%" />
@@ -230,8 +237,8 @@ const Index = () => (
         <SVG icon="hexa" width={16} stroke={colors.red} left="75%" top="30%" />
         <SVG icon="hexa" width={8} stroke={colors.yellow} left="80%" top="70%" />
       </Divider>
-      <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={2} />
-      <Divider speed={0.1} offset={2}>
+      <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={3} />
+      <Divider speed={0.1} offset={3}>
         <UpDown>
           <SVG icon="box" className={hidden} width={6} fill={colors.blue} left="50%" top="75%" />
           <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
@@ -250,30 +257,32 @@ const Index = () => (
         <SVG icon="box" width={12} fill={colors['grey-darkest']} left="20%" top="30%" />
         <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
       </Divider>
-      <Content speed={0.4} offset={2}>
-        <div style={{ height: '-webkit-fill-available' }}>
-          <Inner>
-            <Title>مدرس</Title>
-            <AboutHero>
-              <Avatar src={avatar} alt="John Doe" />
-              <AboutSub>
+      <Content speed={0.4} offset={3}>
+        <Inner>
+          <Title>مدرس</Title>
+          <AboutHero>
+            <Avatar src={avatar} alt="John Doe" />
+            <AboutSub>
+              <p style={{ fontSize: '2.5vh' }}>
                 نوید گل پور مدرس این دوره برنامه نویس حوزه های مختلف کامپیوتری از جمله Front-End. Back-End, Mobile,
                 BlockChain است و از طرفی تجربه زیادی در کار کردن با نوجوانان دارد. برگزاری دوره های مختلف پرورش خلاقیت،
                 فلسفه برای کودکان در کنار دانش برنامه نویسی او را فرد کاملا مناسبی برای برگزاری این دوره آموزشی نموده
                 است
-              </AboutSub>
-            </AboutHero>
-            <AboutDesc>
+              </p>
+            </AboutSub>
+          </AboutHero>
+          <AboutDesc>
+            <p style={{ fontSize: '2.5vh' }}>
               دوره آموزشی «جادوگران آینده» بر اساس جدیدترین متدهای آموزشی تدوین شده است. تمرکز این دوره بر توانمند نمودن
               نوجوانان برای «خودآموزی» و «کار تیمی» است که مهمترین مهارت های لازم برای کدنویسان ممتاز است. در طی این
               دوره پرورش عنصر تخیل کودکان مورد توجه بسیاری است. چرا که از طرفی برنامه نویسی کاری است، بسیار «خلاقانه» و
               از طرف دیگر فانتزی و تخیل نقش پررنگی در علاقه مند نمودن کودکان و نوجوانان به آموزش و یادگیری دارد تحقیقات
               روانشناسان نشان داده است که یادگیری کودکان در فضای فانتزی بسیار بیشتر از فضای واقعی اتفاق می افتد.
-            </AboutDesc>
-          </Inner>
-        </div>
+            </p>
+          </AboutDesc>
+        </Inner>
       </Content>
-      <Divider fill="#23262b" speed={0.2} offset={2}>
+      <Divider fill="#23262b" speed={0.2} offset={4}>
         <WaveWrapper>
           <InnerWave>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 338.05" preserveAspectRatio="none">
@@ -289,7 +298,7 @@ const Index = () => (
           </InnerWave>
         </WaveWrapper>
       </Divider>
-      <Content speed={0.4} offset={3}>
+      <Content speed={0.4} offset={4}>
         <Inner>
           <Title>راه های تماس</Title>
           <ContactText>
@@ -305,7 +314,7 @@ const Index = () => (
           <a href="https://github.com/LeKoArts/gatsby-starter-portfolio-cara">Github Repository</a>.
         </Footer>
       </Content>
-      <Divider speed={0.1} offset={3}>
+      <Divider speed={0.1} offset={4}>
         <UpDown>
           <SVG icon="upDown" className={hidden} width={8} fill={colors['grey-darkest']} left="70%" top="20%" />
           <SVG icon="triangle" width={8} stroke={colors['grey-darkest']} left="25%" top="5%" />
