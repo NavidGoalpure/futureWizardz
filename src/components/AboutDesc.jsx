@@ -3,11 +3,11 @@ import React from 'react';
 import styled from 'react-emotion';
 
 const LongDesc = styled.p`
-  ${tw('hidden sm:block text-grey-light text-sm  md:text-2xl lg:text-3xl  font-sans pt-6 md:pt-12 text-justify')};
+  ${tw('hidden sm:block text-grey-light text-sm  md:text-2xl lg:text-3xl   pt-6 md:pt-12 text-justify')};
 `;
 
 const ShortDesc = styled.p`
-  ${tw('block sm:hidden text-grey-light text-lg  font-sans pt-6 md:pt-12 text-justify')};
+  ${tw('block sm:hidden text-grey-light text-lg  pt-6 md:pt-12 text-justify')};
 `;
 
 const AboutDesc = () => (
