@@ -98,8 +98,7 @@ const AboutHero = styled.div`
 `;
 
 const Avatar = styled.img`
-  ${tw('rounded-full w-32 xl:w-48 shadow-lg h-full')};
-  margin-left: 3rem;
+  ${tw('rounded-full w-32 xl:w-48 shadow-lg h-full lg: margin-left: 3rem')};
 `;
 
 const AboutSub = styled.span`
@@ -187,28 +186,32 @@ const Index = () => (
             <ProjectCard
               title="جوزف وایزنبام"
               link="https://www.behance.net/gallery/58937147/Freiheit"
-              bg="linear-gradient(to left, #2f365f 0%, #2779bd 100%)"
+              // bg="linear-gradient(to left, #9361E1 0%,  #9361E1 100%)"
+              bg="linear-gradient(to left, #D4145A 0%, #D4145A 100%)"
             >
               کدنویس خالق جهان خودشه. جهان مجازی پیچیده ای که در قالب برنامه های کامپیوتری ساخته میشه.
             </ProjectCard>
             <ProjectCard
               title="استیو جابز"
               link="https://www.behance.net/gallery/52915793/Harry-Potter"
-              bg="linear-gradient(to left, #662D8C 0%, #ED1E79 100%)"
+              bg="linear-gradient(to left, #db8e01 0%, #db8e01 100%)"
+              // bg="linear-gradient(to left, #BE3B20 0%, #BE3B20 100%)"
             >
               هرکسی باید کدنویسی رو یاد بگیره. چون کدنویسی شیوه فکر کردن رو آموزش میده.
             </ProjectCard>
             <ProjectCard
               title="کریس بوش"
               link="https://www.behance.net/gallery/43907099/Tomb-Raider"
-              bg="linear-gradient(to left, #0b4228 0%,  #009245 100%)"
+              // bg="linear-gradient(to left, #3AC071 0%,  #3AC071 100%)"
+              bg="linear-gradient(to left, #794acf 0%, #794acf 100%)"
             >
               وقتی صحبت از آینده است،‌خیلی مهمه قابلیت آموزش زبان های برنامه نویسی رو داشته باشیم.
             </ProjectCard>
             <ProjectCard
               title="الن اولمن"
               link="https://www.behance.net/gallery/38068151/Eagle"
-              bg="linear-gradient(to left, #D4145A 0%, #ef5753 100%)"
+              // bg="linear-gradient(to left, #265B8B 0%, #265B8B 100%)"
+              bg="linear-gradient(to left, #2779bd 0%, #2779bd 100%)"
             >
               کدنویسی هنر طراحی الگوریتم ها و رام کردن کدهای سرگردانه!
             </ProjectCard>
