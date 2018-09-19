@@ -11,6 +11,8 @@ import ProjectCard from '../components/ProjectCard';
 import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations';
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
+import AboutSub from '../components/AboutSub.jsx';
+import AboutDesc from '../components/AboutDesc.jsx';
 import triangle from '../images/triangle.svg';
 import avatar from '../images/avatar.jpg';
 import '../styles/global';
@@ -98,15 +100,7 @@ const AboutHero = styled.div`
 `;
 
 const Avatar = styled.img`
-  ${tw('rounded-full w-32 xl:w-48 shadow-lg h-full lg: margin-left: 3rem')};
-`;
-
-const AboutSub = styled.span`
-  ${tw('text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl')};
-`;
-
-const AboutDesc = styled.p`
-  ${tw('text-grey-light text-lg md:text-xl lg:text-2xl font-sans pt-6 md:pt-12 text-justify')};
+  ${tw('rounded-full w-32 xl:w-48 shadow-lg h-full  md:ml-8')};
 `;
 
 const ContactText = styled.p`
@@ -265,24 +259,9 @@ const Index = () => (
           <Title>مدرس</Title>
           <AboutHero>
             <Avatar src={avatar} alt="John Doe" />
-            <AboutSub>
-              <p style={{ fontSize: '2.5vh' }}>
-                نوید گل پور مدرس این دوره برنامه نویس حوزه های مختلف کامپیوتری از جمله Front-End. Back-End, Mobile,
-                BlockChain است و از طرفی تجربه زیادی در کار کردن با نوجوانان دارد. برگزاری دوره های مختلف پرورش خلاقیت،
-                فلسفه برای کودکان در کنار دانش برنامه نویسی او را فرد کاملا مناسبی برای برگزاری این دوره آموزشی نموده
-                است
-              </p>
-            </AboutSub>
+            <AboutSub />
           </AboutHero>
-          <AboutDesc>
-            <p style={{ fontSize: '2.5vh' }}>
-              دوره آموزشی «جادوگران آینده» بر اساس جدیدترین متدهای آموزشی تدوین شده است. تمرکز این دوره بر توانمند نمودن
-              نوجوانان برای «خودآموزی» و «کار تیمی» است که مهمترین مهارت های لازم برای کدنویسان ممتاز است. در طی این
-              دوره پرورش عنصر تخیل کودکان مورد توجه بسیاری است. چرا که از طرفی برنامه نویسی کاری است، بسیار «خلاقانه» و
-              از طرف دیگر فانتزی و تخیل نقش پررنگی در علاقه مند نمودن کودکان و نوجوانان به آموزش و یادگیری دارد تحقیقات
-              روانشناسان نشان داده است که یادگیری کودکان در فضای فانتزی بسیار بیشتر از فضای واقعی اتفاق می افتد.
-            </p>
-          </AboutDesc>
+          <AboutDesc />
         </Inner>
       </Content>
       <Divider fill="#23262b" speed={0.2} offset={4}>
