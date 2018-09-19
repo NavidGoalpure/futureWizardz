@@ -14,12 +14,13 @@ const Wrapper = styled.a`
 `;
 
 const Text = styled.div`
-  ${tw('opacity-75 font-sans')};
+  text-align: left;
 `;
 
 const Title = styled.div`
   ${tw('text-white  text-1xl md:text-2xl xl:text-1xl tracking-wide  pt-8')};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
 `;
 
 const ProjectCard = ({ title, link, children, bg }) => (

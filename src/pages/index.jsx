@@ -48,10 +48,12 @@ const BigTitle = styled.h1`
 `;
 
 const Title = styled.h1`
-  ${tw('text-4xl lg:text-4xl font-serif text-white mb-8 tracking-wide relative inline-block')};
+  ${tw('text-4xl lg:text-4xl font-serif text-white mb-8 tracking-wide relative ')};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: initial;
   &:before {
     content: '';
+
     width: 40px;
     height: 40px;
     background: url(${triangle});
@@ -96,11 +98,11 @@ const InnerWave = styled.div`
 `;
 
 const AboutHero = styled.div`
-  ${tw('flex flex-col lg:flex-row items-center mt-8')};
+  ${tw('flex flex-col lg:flex-row items-center ')};
 `;
 
 const Avatar = styled.img`
-  ${tw('rounded-full w-32 xl:w-48 shadow-lg h-full  md:ml-8')};
+  ${tw('rounded-full w-24 xl:w-48 shadow-lg h-full  md:ml-8')};
 `;
 
 const ContactText = styled.p`
