@@ -43,12 +43,12 @@ const Inner = styled.div`
 `;
 
 const BigTitle = styled.h1`
-  ${tw('text-5xl lg:text-6xl font-sans text-white mb-6 tracking-wide')};
+  ${tw('text-5xl lg:text-6xl   text-center  text-white mb-6 tracking-wide')};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
 `;
 
 const Title = styled.h1`
-  ${tw('text-4xl lg:text-4xl font-sans text-white mb-8 tracking-wide relative ')};
+  ${tw('text-4xl lg:text-4xl  text-white mb-8 tracking-wide relative ')};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   display: initial;
   &:before {
@@ -66,7 +66,7 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.p`
-  ${tw('text-2xl lg:text-4xl font-sans text-white mt-8 xxl:w-3/4')};
+  ${tw('text-2xl lg:text-4xl text-white  text-center mt-8 xxl:w-3/4')};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 `;
 
@@ -106,7 +106,7 @@ const Avatar = styled.img`
 `;
 
 const ContactText = styled.p`
-  ${tw('text-grey-light font-sans text-xl md:text-2xl lg:text-3xl')};
+  ${tw('text-grey-light ftext-xl md:text-2xl lg:text-3xl')};
   a {
     color: #e07628;
     text-decoration: none;
@@ -114,7 +114,7 @@ const ContactText = styled.p`
 `;
 
 const Footer = styled.footer`
-  ${tw('text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg')};
+  ${tw('text-center text-grey absolute pin-b p-6  text-md lg:text-lg')};
   a {
     color: #e07628;
     text-decoration: none;
@@ -155,17 +155,13 @@ const Index = () => (
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            <p style={{ textAlign: 'center' }}>
-              باشگاه کدنویسی <br />
-              جادوگران آینده
-            </p>
+            باشگاه کدنویسی <br />
+            جادوگران آینده
           </BigTitle>
           <Subtitle>
-            <p style={{ textAlign: 'center' }}>
-              برگزار کننده خلاقانه ترین دوره آموزش کدنویسی
-              <br />
-              برای نوجوانان
-            </p>
+            برگزار کننده خلاقانه ترین دوره آموزش کدنویسی
+            <br />
+            برای نوجوانان
           </Subtitle>
         </Hero>
       </Content>
