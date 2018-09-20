@@ -15,6 +15,7 @@ const Wrapper = styled.a`
 
 const Text = styled.div`
   text-align: left;
+  font-weight: bold;
 `;
 
 const Title = styled.div`

@@ -35,7 +35,10 @@ const Content = styled(ParallaxLayer)`
 `;
 
 const Hero = styled.div`
-  ${tw('w-full xl:w-2/3')};
+  ${tw('w-full')};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Inner = styled.div`
