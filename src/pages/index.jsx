@@ -288,11 +288,11 @@ const Index = () => (
         <Inner>
           <Title>راه های تماس</Title>
           <ContactText>
-            برای ثبت نام <a href="https://goo.gl/forms/k95q09lqhRg7qf0Z2">اینجا</a>
+            برای ثبت نام <a href="https://goo.gl/forms/k95q09lqhRg7qf0Z2">اینجا </a>
             کلیک کنید.
             <br />
-            برای کسب اطلاعات بیشتر از طریق <a href="https://t.me/codeclubgorgan"> آیدی </a> یا{' '}
-            <a href="https://t.me/GrateStallman">کانال</a> تلگرام با ما در تماس باشید.
+            برای کسب اطلاعات بیشتر از طریق <a href="https://t.me/GrateStallman"> آیدی </a> یا{' '}
+            <a href="https://t.me/codeclubgorgan">کانال</a> تلگرام با ما در تماس باشید.
           </ContactText>
         </Inner>
         <Footer>
